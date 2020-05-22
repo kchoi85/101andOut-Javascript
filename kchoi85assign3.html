@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Description: 101 and out Game
+     Date: 2019
+     Author: Kihoon Choi
+     -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>101 and out</title>
+    <script src="kchoi85assign3.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="kchoi85assign3.css">
+    <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+  </head>
+  <body onload="onLoad()">
+    <div id="heading">
+      <h1>Welcome to 101 and Out</h1>
+    </div><br>
+    <b><div id="1">Player 1 - Enter your name:</div></b> <input id="p1" type="text" name="" value=""><br><br>
+    <b><div id="2">Player 2 - Enter your name:</div></b> <input id="p2" type="text" name="" value=""><br><br>
+    <button id="start" type="button" name="button" onclick="gameStart()" onmouseover="blacker()">Click Here to Start Game</button><br><hr>
+
+
+    <h2><div id="turn">Please Enter names for Player 1 and Player 2!<div></h2>
+    <button id="fakeRoll" type="button" name="button">Roll The Dice</button>
+    <button id="roll" type="button" name="button" onclick="dieRoll()">Roll The Dice</button>
+    <button id="roll2" type="button" name="button" onclick="rollForTwo()">Roll The Dice</button>
+    <h1><em><div id="rolled"></div></em></h1>
+    <div id="faces">
+      <input id="faceVal" type="radio" name="face" value="faceVal" checked>Take Face Value<br>
+      <input id="faceTen" type="radio" name="face" value="faceTen">Times Face By Ten<br>
+    </div>
+    <b><p id="useless">*Please press "Add on my score" TWO TIMES to add to your score*</p></b>
+    <button id="fakeAdd" type="button" name="button">Add on my Score</button>
+    <button id="add" class='button' type="button" name="button">Add on my Score</button>
+    <button id="stopTurn" type="button" name="button" onclick="p2Turn()">Stop My Turn</button><br>
+
+    <h2><div id="p1Score">Player 1 Score: 0</div></h2>
+    <h2><div id="p2Score">Player 2 Score: 0</div></h2><hr>
+
+    <em><i><b><h1><div id="winner"></div></h1></b></i></em><hr>
+    <div id="pic">
+      <img src="star.png" alt="Red Star" width="200">
+      <img src="star.png" alt="Red Star" width="200">
+      <img src="star.png" alt="Red Star" width="200">
+    </div>
+
+
+  </body>
+</html>

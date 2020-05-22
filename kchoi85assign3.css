@@ -1,0 +1,35 @@
+/*   Author: Kihoon Choi
+     Date: March 2020
+	 Purpose: Make the page look nice!
+*/
+
+button { /* For every button */
+color: white;
+text-transform: uppercase;
+background: #FF5733;
+padding: 15px;
+border-radius: 20px;
+border: none;
+transition: all 0.4s ease 0s;
+cursor: pointer;
+}
+
+button:hover { /* For every button's hover */
+background: #434343;
+letter-spacing: 1px;
+transition: all 0.4s ease 0s;
+}
+
+body { /* For body, font and background color */
+  font-family: 'Chilanka';font-size: 16px;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+#heading { /* Heading box */
+  padding: 5px 5px 5px 5px;
+  color: black;
+  background-color: #eeeeee;
+  border: #dddddd 5px solid;
+  width: 800px;
+}
